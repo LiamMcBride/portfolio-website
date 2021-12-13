@@ -46,10 +46,10 @@ class Home extends React.Component{
                         <ProjectCard title="Journal" photo="journal.png" link="https://github.com/LiamMcBride/Website" desc={journalDesc}/>
                     </tr>
                     <tr>
-                        <ProjectCard title="Gatsby Game" photo="gatsby.png" link="https://bluelettergames.itch.io/gatsby-game" desc={gatsbyDesc}/>
+                        <ProjectCard title="Gatsby Game" photo="gatsby.PNG" link="https://bluelettergames.itch.io/gatsby-game" desc={gatsbyDesc}/>
                     </tr>
                     <tr>
-                        <ProjectCard title="Crucible" photo="crucible.png" link="https://bluelettergames.itch.io/the-crucible" desc={crucibleDesc}/>
+                        <ProjectCard title="Crucible" photo="crucible.PNG" link="https://bluelettergames.itch.io/the-crucible" desc={crucibleDesc}/>
                     </tr>
                 </table>
             </div>
