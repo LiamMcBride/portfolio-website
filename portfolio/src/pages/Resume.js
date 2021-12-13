@@ -53,10 +53,10 @@ class Resume extends React.Component{
                     <br></br>
                 </p>
                 {/* <a href="./files/resume.pdf" download target="_blank">PDF</a> */}
-                <a style={iconStyle} href="./files/resume.pdf" target="_blank">
+                <a style={iconStyle} href="./resume.pdf" target="_blank">
                     <FontAwesomeIcon size="2x" color={colorGreen} icon={faFilePdf} />
                 </a>
-                <a style={iconStyle} href="./files/resume.pdf" download>
+                <a style={iconStyle} href="./resume.pdf" download>
                     <FontAwesomeIcon size="2x" color={colorGreen} icon={faCloudDownloadAlt} />
                 </a>
             </div>
