@@ -19,6 +19,13 @@ const countriesAndStatesDesc = "This project was done while onboarding at Exelar
 
 const journalDesc = "This was my first non-tutorial javascript project. I created a journal entry application that saves data locally to your web browser.";
 
+const gatsbyDesc = "This was a simple game made using Unity. It's a copy of frogger except you're Myrtle trying not to get hit by Gatsby's car. " +
+"This was made for an English project. It was a lot of fun to create the pixel assets.";
+
+const crucibleDesc = "This was one of the first complete games I ever made. I made it for an English class assignment about" + 
+" the Salem Witch Trials. You can fly around as a witch and attack common-folk. I wouldn't say this is a representation of my current " +
+"skill. I've come a long way since making this, but it's quite fun to show some of my earlier projects.";
+
 class Home extends React.Component{
     render(){
         return(
@@ -32,11 +39,17 @@ class Home extends React.Component{
                     <tr>
                         <ProjectCard title="Lively Spirit" photo="livelySpirit.png" link="https://bluelettergames.itch.io/lively-spirit" desc={livelySpiritDesc}/>
                     </tr>
-                    <tr>
+                    {/* <tr>
                         <ProjectCard title="Countries and States" photo="livelySpirit.png" link="https://github.com/LiamMcBride/Frontend_backend_proj" desc={countriesAndStatesDesc}/>
-                    </tr>
+                    </tr> */}
                     <tr>
                         <ProjectCard title="Journal" photo="journal.png" link="https://github.com/LiamMcBride/Website" desc={journalDesc}/>
+                    </tr>
+                    <tr>
+                        <ProjectCard title="Gatsby Game" photo="gatsby.png" link="https://bluelettergames.itch.io/gatsby-game" desc={gatsbyDesc}/>
+                    </tr>
+                    <tr>
+                        <ProjectCard title="Crucible" photo="crucible.png" link="https://bluelettergames.itch.io/the-crucible" desc={crucibleDesc}/>
                     </tr>
                 </table>
             </div>
