@@ -34,7 +34,8 @@ class Resume extends React.Component{
                     Delivery driver along with janitorial and food prep work.
                     <br></br>
                     <b>Exelaration Software Engineer Intern (09/2021 - Current)</b><br></br>
-                    Delivery driver along with janitorial and food prep work.
+                    Working as a consultant for Rhythm's Customer Support portal. Utilizing Django, React,
+                    Typescript, and Docker to perform end-to-end modifications on the existing system.
                     <br></br>
                 </p>
                 <h2>Skills</h2>
@@ -53,10 +54,10 @@ class Resume extends React.Component{
                     <br></br>
                 </p>
                 {/* <a href="./files/resume.pdf" download target="_blank">PDF</a> */}
-                <a style={iconStyle} href="./resume.pdf" target="_blank">
+                <a style={iconStyle} href="./liamresume.pdf" target="_blank">
                     <FontAwesomeIcon size="2x" color={colorGreen} icon={faFilePdf} />
                 </a>
-                <a style={iconStyle} href="./resume.pdf" download>
+                <a style={iconStyle} href="./liamresume.pdf" download>
                     <FontAwesomeIcon size="2x" color={colorGreen} icon={faCloudDownloadAlt} />
                 </a>
             </div>
