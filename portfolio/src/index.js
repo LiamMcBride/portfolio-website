@@ -5,6 +5,8 @@ import Home from './pages/Home.js';
 import Resume from './pages/Resume';
 import NavBar from './components/NavBar';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
 import reportWebVitals from './reportWebVitals';
 import { pagestyle } from "./styles/styles";
 
@@ -12,30 +14,57 @@ const tableStyle = {
   "height": "100%",
 }
 
+class MainComponent extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {currentTab: "Home"};
+    this.tabObject = this.tabObject.bind(this);
+  }
+
+  changeTab = (tab) => {
+    this.setState({currentTab: tab});
+  }
+
+  tabObject = () => {
+    if(this.state.currentTab === "Home"){
+      console.log("Hi");
+      return (<Home />);
+    }
+    if(this.state.currentTab === "Resume"){
+      return <Resume />;
+    }
+    if(this.state.currentTab === "Projects"){
+      return <Projects />;
+    }
+    if(this.state.currentTab === "Skills"){
+      return <Skills />;
+    }
+    if(this.state.currentTab === "Contact"){
+      return <Contact />;
+    }
+  }
+
+
+
+
+
+  render(){
+    return(
+        <div class="wrapper">
+            <div class="sidebar">
+              <NavBar onTabChange={this.changeTab}/>
+            </div>
+            <div class="main_content">
+              {this.tabObject()}
+            </div>
+        </div>
+    );
+  }
+}
+
 ReactDOM.render(
-  // <table style={tableStyle}>
-  //   <tbody>
-  //     <td>
-  //       <NavBar />
-  //     </td>
-  //     <td>
-  //       <Resume style={pagestyle}/>
-  //     </td>
-  //   </tbody>
-  // </table>,
-
-  <div class="wrapper">
-    <div class="sidebar">
-      <NavBar />
-    </div>
-    <div class="main_content">
-      <Projects />
-    </div>
-  </div>,
+  <MainComponent />,
   document.getElementById('root')
+  
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

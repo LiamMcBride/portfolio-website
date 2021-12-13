@@ -1,14 +1,17 @@
 import React from 'react';
 import { pagestyle } from '../styles/styles';
-import { resumePersonalProfile } from '../styles/styles';
+import { resumePersonalProfile, colorGreen } from '../styles/styles';
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
+import {faCloudDownloadAlt} from '@fortawesome/free-solid-svg-icons';
 import './resume.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const style = {
-    "color": "#60C689",
+    "color": colorGreen,
 }
 
-const style2 = {
-    "color": "white",
+const iconStyle = {
+    "margin": "10px",
 }
 
 class Resume extends React.Component{
@@ -49,6 +52,13 @@ class Resume extends React.Component{
                     4 Year varsity runner as well as team captain
                     <br></br>
                 </p>
+                {/* <a href="./files/resume.pdf" download target="_blank">PDF</a> */}
+                <a style={iconStyle} href="./files/resume.pdf" target="_blank">
+                    <FontAwesomeIcon size="2x" color={colorGreen} icon={faFilePdf} />
+                </a>
+                <a style={iconStyle} href="./files/resume.pdf" download>
+                    <FontAwesomeIcon size="2x" color={colorGreen} icon={faCloudDownloadAlt} />
+                </a>
             </div>
         );
     }

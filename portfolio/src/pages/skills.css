@@ -1,0 +1,33 @@
+li {
+    color: #b2b2b2;
+}
+
+.font-cell {
+    min-width: 100px;
+}
+.list-cell {
+    min-width: 275px;
+    min-height: 130px;
+    vertical-align: top;
+    text-align: left;
+}
+
+table {
+    vertical-align: top;
+}
+
+.skill-div {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+}
+
+.skill-td {
+    vertical-align: top;
+}
+
+.skill-table {
+    vertical-align: top;
+    height: 100%;
+    min-height: 150px;
+}
