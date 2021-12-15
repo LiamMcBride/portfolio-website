@@ -22,9 +22,9 @@ class Home extends React.Component{
             <div style={pagestyle}>
                 <h1 style={style}>Hello, my name is Liam McBride...</h1>
                 <h2 style={style2}>I'm a software developer and fullstack engineer in training.</h2>
-                <div class="crop">
+                {/* <div class="crop">
                     <img src="images/headShot.jpg" alt="Donald Duck" />
-                </div>
+                </div> */}
             </div>
         );
     }

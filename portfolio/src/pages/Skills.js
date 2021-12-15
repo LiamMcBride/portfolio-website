@@ -67,6 +67,32 @@ const skillDict = {
     ],
 }
 
+const mobileView = () => {
+    let width = window.innerWidth;
+    console.log(window.innerWidth);
+    if(width > 800){
+        return (<tbody>
+        <tr>{skillBlocks[0].map(element => <td>{element}</td>)}</tr>
+        <tr>{skillBlocks[1].map(element => <td>{element}</td>)}</tr>
+        <tr>{skillBlocks[2].map(element => <td>{element}</td>)}</tr>
+        
+    </tbody>);
+    }
+    else{
+        let skillTemp = [];
+        skillBlocks[0].forEach(element => skillTemp.push(element));
+        skillBlocks[1].forEach(element => skillTemp.push(element));
+        skillBlocks[2].forEach(element => skillTemp.push(element));
+        return (
+            <tbody>
+            {
+                skillTemp.map(element => <tr><td>{element}</td></tr>)
+            }
+            </tbody>
+        );
+    }
+}
+
 const Skill = (props) => {
     return(
         <div class="skill-div">
@@ -116,12 +142,7 @@ class Skills extends React.Component{
             <div style={pagestyle}>
                 <h1 style={style}>Skills</h1>
                 <table>
-                    <tbody>
-                        <tr>{skillBlocks[0].map(element => <td>{element}</td>)}</tr>
-                        <tr>{skillBlocks[1].map(element => <td>{element}</td>)}</tr>
-                        <tr>{skillBlocks[2].map(element => <td>{element}</td>)}</tr>
-                        
-                    </tbody>
+                    {mobileView()}
                 </table>
             </div>
         );

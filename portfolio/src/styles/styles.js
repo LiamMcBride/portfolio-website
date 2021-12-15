@@ -1,6 +1,6 @@
 export const pagestyle = {
     "padding": "10px",
-    "padding-left": "30px"
+    "padding-left": "30px",
     //#60C689
 }
 

@@ -10,8 +10,8 @@ import Contact from './pages/Contact';
 import reportWebVitals from './reportWebVitals';
 import { pagestyle } from "./styles/styles";
 
-const tableStyle = {
-  "height": "100%",
+const style = {
+  "width": "100%",
 }
 
 class MainComponent extends React.Component {
@@ -51,7 +51,7 @@ class MainComponent extends React.Component {
 
   render(){
     return(
-        <div class="wrapper">
+        <div style={style} class="wrapper">
             <div class="sidebar">
               <NavBar onTabChange={this.changeTab}/>
             </div>
