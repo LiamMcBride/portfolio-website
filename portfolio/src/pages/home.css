@@ -1,12 +1,4 @@
-.crop {
-    width: 375px;
-    height: 375px;
-    overflow: hidden;
-    border-radius: 50%;
-    
-}
-
-.crop img {
-    width: 440px;
-    margin-left: -25px;
+img {
+    width: 60%;
+    max-width: 300px;
 }

@@ -33,24 +33,24 @@ class Home extends React.Component{
                 <h1 style={style}>Projects</h1>
                 <h2 style={style2}>I've been up to a lot lately, please check it out!</h2>
                 <table>
-                    <tr>
-                        <ProjectCard title="Code Cracker" photo="codeCracker.PNG" link="https://github.com/LiamMcBride/CodeCracker" desc={codeCrackerDesc}/>
-                    </tr>
-                    <tr>
+                   
+                    <ProjectCard title="Code Cracker" photo="codeCracker.PNG" link="https://github.com/LiamMcBride/CodeCracker" desc={codeCrackerDesc}/>
+                   
+                    
                         <ProjectCard title="Lively Spirit" photo="livelySpirit.png" link="https://bluelettergames.itch.io/lively-spirit" desc={livelySpiritDesc}/>
-                    </tr>
+                    
                     {/* <tr>
                         <ProjectCard title="Countries and States" photo="livelySpirit.png" link="https://github.com/LiamMcBride/Frontend_backend_proj" desc={countriesAndStatesDesc}/>
                     </tr> */}
-                    <tr>
+                   
                         <ProjectCard title="Journal" photo="journal.png" link="https://github.com/LiamMcBride/Website" desc={journalDesc}/>
-                    </tr>
-                    <tr>
+                   
+                    
                         <ProjectCard title="Gatsby Game" photo="gatsby.PNG" link="https://bluelettergames.itch.io/gatsby-game" desc={gatsbyDesc}/>
-                    </tr>
-                    <tr>
+                    
+                    
                         <ProjectCard title="Crucible" photo="crucible.PNG" link="https://bluelettergames.itch.io/the-crucible" desc={crucibleDesc}/>
-                    </tr>
+                    
                 </table>
             </div>
         );
